@@ -1,10 +1,32 @@
 import React from "react";
+import Card from "./Card";
 
-const Content = () => {
+const Content = ({
+  occasions,
+  tokenMaster,
+  provider,
+  account,
+  toggle,
+  setToggle,
+  setOccasion,
+}) => {
   return (
     <div className="content">
-      <h2>Welcome to the Content Area</h2>
-      <p>This is where your main content will go.</p>
+      <div className="cards">
+        {occasions.map((occasion, index) => (
+          <Card
+            occasion={occasion}
+            id={index + 1}
+            tokenMaster={tokenMaster}
+            provider={provider}
+            account={account}
+            toggle={toggle}
+            setToggle={setToggle}
+            setOccasion={setOccasion}
+            key={index}
+          />
+        ))}
+      </div>
     </div>
   );
 };

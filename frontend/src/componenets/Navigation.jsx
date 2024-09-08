@@ -1,10 +1,19 @@
 import React from "react";
+import { ethers } from "ethers";
 
-const Navigation = () => {
+const Navigation = ({ account, setAccount }) => {
+  const connectHandler = async () => {
+    const accounts = await window.ethereum.request({
+      method: "eth_requestAccounts",
+    });
+    const account = ethers.getAddress(accounts[0]);
+    setAccount(account);
+  };
+
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body"
+        className="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body fixed-top"
         data-bs-theme="dark"
       >
         <div className="container-fluid">
@@ -12,14 +21,19 @@ const Navigation = () => {
             ChilizHub
           </a>
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-            <form className="d-flex" role="search">
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
+          {account ? (
+            <button type="button" className="nav__connect">
+              {account.slice(0, 6) + "..." + account.slice(38, 42)}
+            </button>
+          ) : (
+            <button
+              type="button"
+              className="nav__connect"
+              onClick={connectHandler}
+            >
+              Connect
+            </button>
+          )}
         </div>
       </nav>
     </>

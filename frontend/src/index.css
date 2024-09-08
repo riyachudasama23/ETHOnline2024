@@ -1,8 +1,3 @@
-:root {
-  --bg-color: #282828; /* Dark background */
-  --text-color: #ffffff; /* Light text */
-}
-
 body {
   margin: 0;
   min-width: 320px;
@@ -13,14 +8,20 @@ body {
   background-color: #242424;
 }
 
+.blue-txt{
+  color: blue;
+  padding-left: 500px;
+}
+
 .navbar {
-  height: 65px; /* Set a fixed height for the navbar */
-  padding: 0 20px; /* Add horizontal padding */
+  height: 65px; 
+  padding: 0 20px; 
+  position: fixed;
 }
 
 .sidebar {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: #282828;
+  color: #ffffff;
   width: 260px;
   padding: 15px;
   height: 100vh;
