@@ -1,0 +1,84 @@
+{
+  "occasions":[
+    {
+      "name": "Deutsche Synchron Trampolin Meisterschaft 2024",
+      "cost": 0.75,
+      "tickets": 0,
+      "date": "Oct 5",
+      "time": "6:00PM EST",
+      "location": "Dessau-Roßlau, DE"
+    },
+    {
+      "name": "Sun Devil Women's Gymnastics Single Games",
+      "cost": 1,
+      "tickets": 125,
+      "date": "Sep 12",
+      "time": "1:00PM JST",
+      "location": "Tokyo, Japan"
+    },
+    {
+      "name": "New York Liberty vs. Minnesota Lynx",
+      "cost": 0.25,
+      "tickets": 200,
+      "date": "Sep 15",
+      "time": "10:00AM TRT",
+      "location": "Brooklyn, NY"
+    },
+    {
+      "name": "Atlanta Dream vs. Chicago Sky",
+      "cost": 1.25,
+      "tickets": 0,
+      "date": "Sep 17",
+      "time": "2:30PM CST",
+      "location": "College Park, GA"
+    },
+    {
+      "name": "Washington Mystics vs. Indiana Fever",
+      "cost": 1.5,
+      "tickets": 125,
+      "date": "Sep 19",
+      "time": "11:00AM EST",
+      "location": "Washington, DC"
+    },
+    {
+      "name": "Minnesota Lynx vs. Los Angeles Sparks",
+      "cost": 0.75,
+      "tickets": 100,
+      "date": "Sep 19",
+      "time": "6:00PM EST",
+      "location": "Minneapolis, MN"
+    },
+    {
+      "name": "Minnesota Gophers Football vs. Nevada Wolfpack Football",
+      "cost": 1,
+      "tickets": 125,
+      "date": "Sep 14",
+      "time": "1:00PM JST",
+      "location": "Minneapolis, MN"
+    },
+    {
+      "name": "Iowa Hawkeyes Football vs. Troy Trojans Football",
+      "cost": 0.25,
+      "tickets": 200,
+      "date": "Sep 14",
+      "time": "10:00AM TRT",
+      "location": "Iowa City, IA"
+    },
+    {
+      "name": "Northern Illinois Huskies Football vs. Buffalo Bulls Football",
+      "cost": 2,
+      "tickets": 0,
+      "date": "Sep 21",
+      "time": "2:30PM CST",
+      "location": "Dekalb, IL"
+    },
+    {
+      "name": "Ohio Bobcats Football vs. Akron Zips Football",
+      "cost": 1.5,
+      "tickets": 125,
+      "date": "Sep 28",
+      "time": "11:00AM EST",
+      "location": "Athens, OH"
+    }
+  ]
+}
