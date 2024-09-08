@@ -1,0 +1,47 @@
+:root {
+  --bg-color: #282828; /* Dark background */
+  --text-color: #ffffff; /* Light text */
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+.navbar {
+  height: 65px; /* Set a fixed height for the navbar */
+  padding: 0 20px; /* Add horizontal padding */
+}
+
+.sidebar {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  width: 260px;
+  padding: 15px;
+  height: 100vh;
+  position: fixed;
+}
+
+.content {
+  background-color: #312f2f; /* Darker content background */
+  color: rgb(255, 255, 255);
+  margin-left: 260px; /* Adjust margin to match sidebar width */
+  padding: 20px;
+  height: calc(100vh - 50px); /* Full height minus navbar height */
+  flex-grow: 1; 
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar li {
+  margin: 20px 0;
+  cursor: pointer;
+}
+
