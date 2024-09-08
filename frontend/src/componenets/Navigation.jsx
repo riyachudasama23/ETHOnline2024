@@ -17,7 +17,7 @@ const Navigation = ({ account, setAccount }) => {
         data-bs-theme="dark"
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar__brand" href="#">
             ChilizHub
           </a>
 

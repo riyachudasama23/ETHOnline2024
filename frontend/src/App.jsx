@@ -6,6 +6,8 @@ import Content from "./componenets/Content";
 import Navigation from "./componenets/navigation";
 import Sidebar from "./componenets/Sidebar";
 import Card from "./componenets/Card";
+import Seat from "./componenets/Seat";
+import SeatChart from "./componenets/SeatChart";
 
 import Ticketing from "../../src/abis/Ticketing.json";
 
@@ -62,7 +64,17 @@ function App() {
     <>
       <Navigation account={account} setAccount={setAccount} />
       <Sidebar />
+      <Content
+        occasions={occasions}
+        tokenMaster={tokenMaster}
+        provider={provider}
+        account={account}
+        toggle={toggle}
+        setToggle={setToggle}
+        setOccasion={setOccasion}
+      />
       {/* <Content /> */}
+      {/* <Sort /> */}
 
       {/* <div className="cards">
         {occasions.map((occasion, index) => (
@@ -77,11 +89,19 @@ function App() {
             setOccasion={setOccasion}
             key={index}
           />
-          // <p key={index}>{occasion.name}</p>
-        ))} 
-         </div>*/}
+        ))}
 
-      <Content
+        {toggle && (
+          <SeatChart
+            occasion={occasion}
+            tokenMaster={tokenMaster}
+            provider={provider}
+            setToggle={setToggle}
+          />
+        )}
+      </div> */}
+
+      {/* <Content
         occasions={occasions}
         tokenMaster={tokenMaster}
         provider={provider}
@@ -89,7 +109,7 @@ function App() {
         toggle={toggle}
         setToggle={setToggle}
         setOccasion={setOccasion}
-      />
+      /> */}
     </>
   );
 }

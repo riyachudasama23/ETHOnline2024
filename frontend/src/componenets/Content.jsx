@@ -1,5 +1,7 @@
 import React from "react";
 import Card from "./Card";
+import Sort from "./Sort";
+import SeatChart from "./SeatChart";
 
 const Content = ({
   occasions,
@@ -12,6 +14,8 @@ const Content = ({
 }) => {
   return (
     <div className="content">
+      <Sort />
+
       <div className="cards">
         {occasions.map((occasion, index) => (
           <Card
@@ -27,6 +31,15 @@ const Content = ({
           />
         ))}
       </div>
+
+      {toggle && (
+        <SeatChart
+          occasion={occasions}
+          tokenMaster={tokenMaster}
+          provider={provider}
+          setToggle={setToggle}
+        />
+      )}
     </div>
   );
 };
